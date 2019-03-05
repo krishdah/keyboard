@@ -6,9 +6,137 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: whitesmoke;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.keyboard-container {
+  /* margin: 100px; */
+  border: 2px solid black;
+}
+
+.keyboard-container h1 {
+  text-align: center;
+  color: blue;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 2px solid darkcyan;
+  margin: 0px 20px;
+}
+
+.error-text {
+  color: red;
+  font-weight: bold;
+}
+
+.correct-text {
+  color: seagreen;
+  font-weight: bold;
+}
+
+.active {
+  background: gray;
+  color: white;
+}
+
+.story {
+  font: italic 1.5em Georgia, serif;
+  border: 2px solid darkcyan;
+  color: goldenrod;
+  margin: 20px;
+  height: 150px;
+  width: 95vw;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid darkgray;
+  background: ghostwhite;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.error-counter {
+  display: none;
+}
+
+.count-container {
+  display: flex;
+}
+
+.count-container p {
+  margin: 0px 40px;
+}
+.error-count {
+  position: absolute;
+  top: 7px;
+  right: 100px;
+  color: red;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.correct-count {
+  font-size: 1.5em;
+  position: absolute;
+  top: 7px;
+  right: 222px;
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+.accuracy-count {
+  color: yellowgreen;
+  top: 24px;
+  right: 39%;
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.word-count {
+  color: yellowgreen;
+  top: 31px;
+  left: 160px;
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.accuracy-calc {
+  color: violet;
+  font-weight: bold;
+}
+
+.header {
+  margin: 0px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+li:hover {
+  background: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.text-area {
+  background: linen;
+  font: italic 1.7em Georgia, serif;
+  color: seagreen;
+  margin: 0px 20px;
+  height: 120px;
+  width: 95vw;
 }
